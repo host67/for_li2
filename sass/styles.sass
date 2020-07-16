@@ -1,0 +1,343 @@
+@font-face
+	font-family: DOCK11 Heavy
+	src: url(../fonts/dock11-heavy.otf)
+@font-face
+	font-family: ProximaNova Regular
+	src: url(../fonts/proxima-nova-regular.ttf)
+@font-face
+	font-family: ProximaNova Bold
+	src: url(../fonts/proxima-nova-bold.otf)
+	
+%main-font
+	font: 18px 'ProximaNova Regular'
+	
+button
+	@extend %main-font
+	color: white
+	background-color: #30ba9e
+	border: none
+	border-radius: 10px
+	
+%inner-link
+	color: #31ba9f
+	text-decoration: underline
+	text-underline-position: under
+
+$primary-color: #31bb9f
+	
+body
+	margin: 0
+	color: black
+
+ul 
+	margin: 0
+	padding: 0
+
+li
+	list-style-type: none
+	
+a
+	color: #000000
+	text-decoration: none
+
+p
+	@extend %main-font
+	color: #1f1f1f
+	margin: 0
+	line-height: 24px
+	
+button
+	cursor: pointer
+		
+.container
+	width: 1200px
+	margin: 0 auto
+	display: flex
+	justify-content: space-between
+	
+.top-header .container
+	align-items: center
+	min-height: 92px
+
+.left-top-header, .right-top-header
+	display: flex
+	justify-content: space-between
+	align-items: center
+	
+.top-logo a
+	color: $primary-color
+	font-family: 'DOCK11 Heavy'
+	font-size: 26px
+	
+.top-search
+	width: 41px
+	height: 34px
+	border: solid 1px #cdcdcd
+	border-radius: 5px
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-left: 26px
+	a
+		height: 16px
+	
+nav
+	ul
+		display: flex
+		justify-content: space-between
+	a
+		@extend %main-font
+		margin: 22px
+
+.right-top-header
+	width: 652px
+	
+.top-icons
+	width: 225px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-top: 5px
+
+.top-comments
+	display: flex
+	align-items: center	
+	
+.top-quant-comments
+	margin-top: 5px
+	display: flex
+	justify-content: center
+	align-items: center
+	color: #fff
+	@extend %main-font
+	font-size: 16.5px
+	background: $primary-color
+	border-radius: 50%
+	width: 25px
+	height: 25px
+	
+.breadcrumb
+	background-color: #e6f7f3
+	@extend %main-font
+	
+.bread-content
+	min-height: 70px
+	display: flex
+	align-items: center
+	a
+		color: #b8b8b8
+	img
+		margin-left: 32px
+		margin-right: 14px
+		width: 22px
+		
+.company
+	button
+		padding: 11px 22px 12px
+	.hr
+		width: 800px
+		margin-top: 30px
+		border: solid 1px #dddddd
+
+.company-name
+	@extend %main-font
+	font-size: 36px
+	color: #1f1f1f
+	margin-top: 30px
+	margin-bottom: 16px
+
+.company-rating 
+	display: flex
+	margin-bottom: 24px
+	img
+		height: 20px
+		margin: 3px
+	span
+		@extend %main-font
+		font-size: 22px
+		margin-left: 16px
+		
+.company-descr
+	display: flex
+	margin-top: 30px
+	margin-bottom: 50px
+	a
+		@extend %inner-link
+	p
+		letter-spacing: 0.5px
+	
+.company-about
+	margin-right: 10px
+	width: 340px
+	
+.comp-descr-title
+	@extend %main-font
+	color: #aaaaaa
+	margin-bottom: 12px
+
+main
+	background-color: #eeeeee
+	padding-top: 23px
+	
+.main-title
+	@extend %main-font
+	font-size: 24px
+	color: #1f1f1f
+	a
+		@extend %inner-link
+		font-size: 20px
+		margin-left: 25px
+		
+.main-quant
+	@extend %main-font
+	font-size: 20px
+	color: #bbbbbb
+		
+.reviews
+	width: 854px
+	margin: 35px 0 0 180px
+	
+.review
+	background-color: #fff
+	border: solid 1px #dddddd
+	border-radius: 8px
+	input[type=text]
+		border: none
+		@extend %main-font
+		color: #aaaaaa
+		width: 600px
+	
+.write-title
+	display: flex
+	justify-content: space-between	
+	margin-bottom: 16px
+	padding: 13px 34px 13px 30px
+	
+.write-text
+	margin-bottom: 22px
+	padding: 19px 34px 20px 30px
+	
+.write-text-part
+	display: flex
+	justify-content: space-between
+	button
+		font-size: 16px
+		padding: 12px 23px 13px 22px
+		
+.write-text-foto
+	align-self: flex-end
+	
+.first-review
+	margin-bottom: 42px
+	
+.first-review-top
+	display: flex
+	justify-content: space-between
+	margin: 0 16px 44px
+	padding-top: 30px
+	border-bottom: solid 1px #e6e6e6
+
+.author
+	display: flex
+	
+.author-foto
+	margin: 0 0 -20px 23px
+	
+.author-name
+	@extend %main-font
+	color: #1f1f1f
+	margin-left: 20px
+	
+.review-part
+	display: flex
+	margin-right: 12px
+	
+.review-data
+	@extend %main-font
+	font-size: 16px
+	color: #aaaaaa
+	margin-right: 19px
+	
+.review-title
+	font: 18px 'ProximaNova Bold'
+	span
+		margin-right: 14px
+	img
+		width: 15px
+		margin-right: 5px
+	
+.review-content
+	padding: 0 40px
+	
+.review-text p
+	margin: 15px 0 15px
+
+.review-text a
+	color: #31ba9f
+	
+.review-pop
+	display: flex
+	margin-top: 15px
+	
+.review-comment-quant, .review-repost 
+	display: flex
+	margin: 8px
+	span
+		@extend %main-font
+		color: #1f1f1f
+		margin-left: 14px
+		
+.review-comment
+	display: flex
+	margin-top: 30px
+	
+.review-comment-part
+	display: flex
+	justify-content: space-between
+	width: 100%
+	
+.review-comment-author-name
+	@extend %main-font
+	color: #aaaaaa
+	margin-left: 36px
+	
+.review-comment-data
+	@extend %main-font
+	color: #aaaaaa
+	font-size: 16px
+	
+.review-comment-text
+	margin: -15px 0 0 75px
+
+.review-comment-otvet
+	padding: 0 0 20px 78px
+	border-bottom: solid 1px #f0f0f0
+	a
+		@extend %main-font
+		color: #31ba9f
+		
+.write-comment
+	display: flex
+	justify-content: space-between
+	border: solid 1px #dddddd
+	border-radius: 6px
+	margin-bottom: 40px
+	input[type=text]
+		margin-left: 10px
+		padding-left: 30px
+		width: 682px
+	a
+		height: 46px
+		
+footer
+	.container
+		justify-content: flex-start
+		min-height: 73px
+		align-items: center
+	a
+		@extend %main-font
+		color: #aaaaaa
+		text-decoration: underline
+		text-underline-position: under
+	img
+		margin-right: 18px
